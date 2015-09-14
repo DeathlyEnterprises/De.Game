@@ -21,6 +21,10 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "De.Server", "..\..\De.Serve
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "De.Client", "..\..\De.Server\De.Server\De.Client\De.Client.shproj", "{5C4EEA78-B099-499B-957A-A0487919AA4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "De.GameClient.Networking", "De.GameClient.Networking\De.GameClient.Networking.csproj", "{3A047F1D-4E35-4D39-86A9-39462F2AF6A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "De.GameClient.Networking.TestClient", "De.GameClient.Networking.TestClient\De.GameClient.Networking.TestClient.csproj", "{31B38ADA-EF7C-4A69-9D88-6FEE8999A1A9}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		..\..\De.ChatService\De.ChatService\De.ChatService.Server\De.ChatService.Server.projitems*{851b7c11-b2f5-4849-a8ed-21a0e770957e}*SharedItemsImports = 13
@@ -32,6 +36,12 @@ Global
 		..\..\De.Server\De.Server\De.Server\De.Server.projitems*{f820c879-3ca7-4883-91f8-87506fdd9a79}*SharedItemsImports = 4
 		..\..\De.ChatService\De.ChatService\De.ChatService.Server\De.ChatService.Server.projitems*{f820c879-3ca7-4883-91f8-87506fdd9a79}*SharedItemsImports = 4
 		..\..\De.Server\De.Server\De.Client\De.Client.projitems*{5c4eea78-b099-499b-957a-a0487919aa4e}*SharedItemsImports = 13
+		..\..\De.ChatService\De.ChatService\De.ChatService.Client\De.ChatService.Client.projitems*{3a047f1d-4e35-4d39-86a9-39462f2af6a0}*SharedItemsImports = 4
+		..\..\De.ChatService\De.ChatService\De.ChatService.Contracts\De.ChatService.Contracts.projitems*{3a047f1d-4e35-4d39-86a9-39462f2af6a0}*SharedItemsImports = 4
+		..\..\De.Server\De.Server\De.Client\De.Client.projitems*{3a047f1d-4e35-4d39-86a9-39462f2af6a0}*SharedItemsImports = 4
+		..\..\De.ChatService\De.ChatService\De.ChatService.Contracts\De.ChatService.Contracts.projitems*{6881ce4f-b9a5-43c7-b36d-b334255bb5a8}*SharedItemsImports = 4
+		..\..\De.Server\De.Server\De.Server\De.Server.projitems*{6881ce4f-b9a5-43c7-b36d-b334255bb5a8}*SharedItemsImports = 4
+		..\..\De.ChatService\De.ChatService\De.ChatService.Server\De.ChatService.Server.projitems*{6881ce4f-b9a5-43c7-b36d-b334255bb5a8}*SharedItemsImports = 4
 		..\..\De.Server\De.Server\De.Server\De.Server.projitems*{2e3774c2-acc6-4558-bfe3-e5a011b5bad0}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +61,14 @@ Global
 		{F820C879-3CA7-4883-91F8-87506FDD9A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F820C879-3CA7-4883-91F8-87506FDD9A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F820C879-3CA7-4883-91F8-87506FDD9A79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A047F1D-4E35-4D39-86A9-39462F2AF6A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A047F1D-4E35-4D39-86A9-39462F2AF6A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A047F1D-4E35-4D39-86A9-39462F2AF6A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A047F1D-4E35-4D39-86A9-39462F2AF6A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31B38ADA-EF7C-4A69-9D88-6FEE8999A1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B38ADA-EF7C-4A69-9D88-6FEE8999A1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B38ADA-EF7C-4A69-9D88-6FEE8999A1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B38ADA-EF7C-4A69-9D88-6FEE8999A1A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

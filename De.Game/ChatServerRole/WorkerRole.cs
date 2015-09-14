@@ -1,14 +1,10 @@
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.WindowsAzure;
-using Microsoft.WindowsAzure.Diagnostics;
+using De.Server;
 using Microsoft.WindowsAzure.ServiceRuntime;
-using Microsoft.WindowsAzure.Storage;
+using SimpleInjector;
 
 namespace ChatServerRole
 {
@@ -16,6 +12,7 @@ namespace ChatServerRole
     {
         private readonly CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
         private readonly ManualResetEvent runCompleteEvent = new ManualResetEvent(false);
+        private IServer _chatServer;
 
         public override void Run()
         {
@@ -23,11 +20,11 @@ namespace ChatServerRole
 
             try
             {
-                this.RunAsync(this.cancellationTokenSource.Token).Wait();
+                RunAsync(cancellationTokenSource.Token).Wait();
             }
             finally
             {
-                this.runCompleteEvent.Set();
+                runCompleteEvent.Set();
             }
         }
 
@@ -39,7 +36,7 @@ namespace ChatServerRole
             // For information on handling configuration changes
             // see the MSDN topic at http://go.microsoft.com/fwlink/?LinkId=166357.
 
-            bool result = base.OnStart();
+            var result = base.OnStart();
 
             Trace.TraceInformation("ChatServerRole has been started");
 
@@ -50,8 +47,8 @@ namespace ChatServerRole
         {
             Trace.TraceInformation("ChatServerRole is stopping");
 
-            this.cancellationTokenSource.Cancel();
-            this.runCompleteEvent.WaitOne();
+            cancellationTokenSource.Cancel();
+            runCompleteEvent.WaitOne();
 
             base.OnStop();
 
@@ -60,12 +57,21 @@ namespace ChatServerRole
 
         private async Task RunAsync(CancellationToken cancellationToken)
         {
-            // TODO: Replace the following with your own logic.
+            var container = new Container();
+            var containerRegistration = new ContainerRegistration();
+            containerRegistration.RegisterServices(container);
+
+            _chatServer = container.GetInstance<IServer>();
+
+            _chatServer.StartServer();
+
             while (!cancellationToken.IsCancellationRequested)
             {
                 Trace.TraceInformation("Working");
-                await Task.Delay(1000);
+                await Task.Delay(1000, cancellationToken);
             }
+
+            _chatServer.StopServer();
         }
     }
 }

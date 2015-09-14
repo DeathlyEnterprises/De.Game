@@ -4,5 +4,8 @@
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
     </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="ChatServer" protocol="tcp" port="8888" />
+    </Endpoints>
   </WorkerRole>
 </ServiceDefinition>
