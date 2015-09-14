@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "De.Game.Server", "De.Game.Server\De.Game.Server.ccproj", "{132F8B40-C6DD-44A1-A249-67D866DFB854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatServerRole", "ChatServerRole\ChatServerRole.csproj", "{6881CE4F-B9A5-43C7-B36D-B334255BB5A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{62B059D4-CEA8-453C-9352-C77DA5D18BBA}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "De.ChatService.Contracts", "..\..\De.ChatService\De.ChatService\De.ChatService.Contracts\De.ChatService.Contracts.shproj", "{48C6FDE7-B754-41E6-A8BF-E1F9FA58837B}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "De.ChatService.Client", "..\..\De.ChatService\De.ChatService\De.ChatService.Client\De.ChatService.Client.shproj", "{1E54347F-4529-4956-A01D-4631B2C023C2}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "De.ChatService.Server", "..\..\De.ChatService\De.ChatService\De.ChatService.Server\De.ChatService.Server.shproj", "{851B7C11-B2F5-4849-A8ED-21A0E770957E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "De.ChatService.Tests", "..\..\De.ChatService\De.ChatService\De.ChatService.Tests\De.ChatService.Tests.csproj", "{F820C879-3CA7-4883-91F8-87506FDD9A79}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "De.Server", "..\..\De.Server\De.Server\De.Server\De.Server.shproj", "{2E3774C2-ACC6-4558-BFE3-E5A011B5BAD0}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "De.Client", "..\..\De.Server\De.Server\De.Client\De.Client.shproj", "{5C4EEA78-B099-499B-957A-A0487919AA4E}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\De.ChatService\De.ChatService\De.ChatService.Server\De.ChatService.Server.projitems*{851b7c11-b2f5-4849-a8ed-21a0e770957e}*SharedItemsImports = 13
+		..\..\De.ChatService\De.ChatService\De.ChatService.Client\De.ChatService.Client.projitems*{1e54347f-4529-4956-a01d-4631b2c023c2}*SharedItemsImports = 13
+		..\..\De.ChatService\De.ChatService\De.ChatService.Contracts\De.ChatService.Contracts.projitems*{48c6fde7-b754-41e6-a8bf-e1f9fa58837b}*SharedItemsImports = 13
+		..\..\De.ChatService\De.ChatService\De.ChatService.Client\De.ChatService.Client.projitems*{f820c879-3ca7-4883-91f8-87506fdd9a79}*SharedItemsImports = 4
+		..\..\De.ChatService\De.ChatService\De.ChatService.Contracts\De.ChatService.Contracts.projitems*{f820c879-3ca7-4883-91f8-87506fdd9a79}*SharedItemsImports = 4
+		..\..\De.Server\De.Server\De.Client\De.Client.projitems*{f820c879-3ca7-4883-91f8-87506fdd9a79}*SharedItemsImports = 4
+		..\..\De.Server\De.Server\De.Server\De.Server.projitems*{f820c879-3ca7-4883-91f8-87506fdd9a79}*SharedItemsImports = 4
+		..\..\De.ChatService\De.ChatService\De.ChatService.Server\De.ChatService.Server.projitems*{f820c879-3ca7-4883-91f8-87506fdd9a79}*SharedItemsImports = 4
+		..\..\De.Server\De.Server\De.Client\De.Client.projitems*{5c4eea78-b099-499b-957a-a0487919aa4e}*SharedItemsImports = 13
+		..\..\De.Server\De.Server\De.Server\De.Server.projitems*{2e3774c2-acc6-4558-bfe3-e5a011b5bad0}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{132F8B40-C6DD-44A1-A249-67D866DFB854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{132F8B40-C6DD-44A1-A249-67D866DFB854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{132F8B40-C6DD-44A1-A249-67D866DFB854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{132F8B40-C6DD-44A1-A249-67D866DFB854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6881CE4F-B9A5-43C7-B36D-B334255BB5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6881CE4F-B9A5-43C7-B36D-B334255BB5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6881CE4F-B9A5-43C7-B36D-B334255BB5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6881CE4F-B9A5-43C7-B36D-B334255BB5A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F820C879-3CA7-4883-91F8-87506FDD9A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F820C879-3CA7-4883-91F8-87506FDD9A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F820C879-3CA7-4883-91F8-87506FDD9A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F820C879-3CA7-4883-91F8-87506FDD9A79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{48C6FDE7-B754-41E6-A8BF-E1F9FA58837B} = {62B059D4-CEA8-453C-9352-C77DA5D18BBA}
+		{1E54347F-4529-4956-A01D-4631B2C023C2} = {62B059D4-CEA8-453C-9352-C77DA5D18BBA}
+		{851B7C11-B2F5-4849-A8ED-21A0E770957E} = {62B059D4-CEA8-453C-9352-C77DA5D18BBA}
+		{F820C879-3CA7-4883-91F8-87506FDD9A79} = {62B059D4-CEA8-453C-9352-C77DA5D18BBA}
+		{2E3774C2-ACC6-4558-BFE3-E5A011B5BAD0} = {62B059D4-CEA8-453C-9352-C77DA5D18BBA}
+		{5C4EEA78-B099-499B-957A-A0487919AA4E} = {62B059D4-CEA8-453C-9352-C77DA5D18BBA}
+	EndGlobalSection
+EndGlobal
